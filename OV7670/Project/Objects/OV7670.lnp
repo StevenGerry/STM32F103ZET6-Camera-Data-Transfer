@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\ov7670.o"
+".\objects\sccb.o"
+".\objects\user_exti.o"
+".\objects\user_ili9341_lcd.o"
+".\objects\esp8266.o"
+".\objects\led.o"
+".\objects\oled.o"
+".\objects\oledfont.o"
+".\objects\misc.o"
+".\objects\stm32f10x_dbgmcu.o"
+".\objects\stm32f10x_rcc.o"
+".\objects\stm32f10x_usart.o"
+".\objects\stm32f10x_gpio.o"
+".\objects\stm32f10x_exti.o"
+".\objects\stm32f10x_fsmc.o"
+".\objects\stm32f10x_tim.o"
+".\objects\stm32f10x_spi.o"
+".\objects\stm32f10x_iwdg.o"
+".\objects\startup_stm32f10x_hd.o"
+".\objects\system_stm32f10x.o"
+--library_type=microlib --strict --scatter ".\Objects\OV7670.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\OV7670.map" -o .\Objects\OV7670.axf
